@@ -24,6 +24,7 @@
             BirthDate = birthDate;
             BaseSalary = baseSalary;
             Department = department;
+            
         }
 
         public void AddSales(SalesRecord sale)
@@ -37,7 +38,7 @@
         public double TotalSales(DateTime initial, DateTime final)
         {
 
-            return Sales.Where(sr => sr.Date >= initial && sr.Date <= final).Sum(sr=> sr.Amount);
+            return Sales.Where(sr => sr.Date >= initial && sr.Date <= final).Sum(sr => sr.Amount);
         }
 
     }

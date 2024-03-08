@@ -23,6 +23,7 @@ namespace SalesWebMvc.Models
             Amount = amount;
             Status = status;
             Seller = seller;
+            
         }
     }
 }
