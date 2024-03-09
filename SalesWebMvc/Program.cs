@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SalesWebMvc.Data;
 using SalesWebMvc.Models;
 using System.Configuration;
+using SalesWebMvc.Services;
 
 namespace SalesWebMvc
 {
@@ -14,6 +15,8 @@ namespace SalesWebMvc
             builder.Services.AddDbContext<SalesWebMvcContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("SalesWebMvcContext") ??
                     throw new InvalidOperationException("Connection string 'SalesWebMvcContext' not found.")));
+
+            builder.Services.AddScoped<SellerService>();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

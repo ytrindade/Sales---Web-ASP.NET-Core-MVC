@@ -16,3 +16,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.navbar-collapse collapse d-sm-inline-flex justify-content-between{
+    color: black;
+}
