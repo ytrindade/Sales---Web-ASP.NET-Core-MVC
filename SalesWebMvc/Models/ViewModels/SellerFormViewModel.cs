@@ -1,6 +1,6 @@
 ﻿namespace SalesWebMvc.Models.ViewModels
 {
-    public class SellerFormerViewModel
+    public class SellerFormViewModel
     {
 
         public Seller Seller { get; set; }
